@@ -21,17 +21,17 @@
         <!--  Шапка  -->
         <nav>
             <!-- Логотип-ссылка  -->
-            <a href="" lang="en">
+            <a href="" lang="en" class="logo">
                 <span>Web</span>Studio
             </a>
     
-            <ul>
+            <ul class="site-nav">
                 <!--Список ссылок для навигации-->
                 <li>
                     <a href="./index.html">Студия</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html">Портфолио</a>
+                    <a href="./portfolio.html" class="active">Портфолио</a>
                 </li>
                 <li>
                     <a href="">Контакты</a>
@@ -39,7 +39,7 @@
             </ul>
         </nav>
         <!-- Контактная информация-->
-        <ul>
+        <ul class="contacts">
             <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li> <a href="tel:+380961111111">+38 096 111 11 11</a>
@@ -50,72 +50,72 @@
         <!-- Projects -->
         <section>
             <!-- Спрятать заголовок -->
-            <h1>Портфолио</h1>
-            <ul>
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайты</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
+            <h1 class="visually-hidden">Портфолио</h1>
+            <ul class="filter">
+                <li ><button type="button" class="filter-item active">Все</button></li>
+                <li ><button type="button" class="filter-item">Веб-сайты</button></li>
+                <li ><button type="button" class="filter-item">Приложения</button></li>
+                <li ><button type="button" class="filter-item">Дизайн</button></li>
+                <li ><button type="button" class="filter-item">Маркетинг</button></li>
             </ul>
-            <ul>
-                <li>
-                    <a href="https://greenforest.com.ua/courses/kiev">
+            <ul class="projects">
+                <li class="project-card">
+                    <a href="">
                         <img src="./images/portfolio1.jpg" alt="Изображение веб-сайта" width="370">
                         <h2>Технокряк</h2>
                         <p>Веб-сайт</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio2.jpg" alt="Постер" width="370">
                         <h2>Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
                         <p>Дизайн</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio3.jpg" alt="Изображение приложения для ресторана" width="370">
                         <h2>Ресторан <span lang="en">Seafood</span></h2>
                         <p>Приложение</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio4.jpg" alt="гарнитура" width="370">
                         <h2>Проект <span lang="en">Prime</span></h2>
                         <p>Маркетинг</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio5.jpg" alt="Коробки" width="370">
                         <h2>Проект <span lang="en">Boxes</span></h2>
                         <p>Приложение</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio6.jpg" alt="Веб-сайт на мониторе" width="370">
                         <h2 lang="en">Inspiration has no Borders</h2>
                         <p>Веб-сайт</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio7.jpg" alt="Журнал" width="370">
                         <h2>Издание <span lang="en">Limited Edition</span></h2>
                         <p>Дизайн</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio8.jpg" alt="Фирменный лейбл" width="370">
                         <h2>Проект LAB</h2>
                         <p>Маркетинг</p>
                     </a>
                 </li>
-                <li>
+                <li class="project-card">
                     <a href="">
                         <img src="./images/portfolio9.jpg" alt="Ноутбук" width="370">
                         <h2 lang="en">Growing Business</h2>
@@ -125,22 +125,24 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <!-- Футер -->
-        <a href="/" lang="en">
+        <!-- Логотип-ссылка  -->
+        <a href="/" lang="en" class="logo">
             <span>Web</span>Studio
         </a>
-        <address>
+        <address class="address">
             <ul>
                 <li>
-                    <a href="https://goo.gl/maps/qX6E7kTWW1nA5MXd7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
-                        Леси Украинки, 26</a>
+                    <!-- адресс - ссылка на гугл карту в новой вкладке -->
+                    <a class="address-map" href="https://goo.gl/maps/qX6E7kTWW1nA5MXd7" target="_blank"
+                        rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
                 <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a class="address-mail" href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380991111111">+38 099 111 11 11</a>
+                    <a class="address-tel" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
         </address>
